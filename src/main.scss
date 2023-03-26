@@ -31,7 +31,7 @@ body{
   background-color: $tertiary-color;
   align-items: center;
   position: relative;
-  
+  transition: all 0.6s ease-in;
   &__header{
     padding: 1rem;
     z-index: 999;
@@ -75,7 +75,7 @@ body{
     color: $primary-color;
     height: auto;
     margin-right: 1rem;
- 
+    transition: all 0.6s ease-in;
   }
 
    
@@ -114,8 +114,22 @@ body{
       position: absolute;
       right: 0;
       cursor: pointer;
-      
+      transition: all 0.6s ease-in;
     }
 
 
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  h1{
+    text-align: center;
+    padding: 1rem;
+    text-transform: uppercase;
+  }
+  &__img{
+    width: auto;
+  }
 }

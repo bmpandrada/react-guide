@@ -6,7 +6,7 @@ import {
 import Nabar from './components/navbar/Nabar';
 
 import Home from './components/pages/Home';
-import About from './components/pages/About';
+import UseStates from './components/pages/UseStates';
 
 function App() {
   
@@ -18,7 +18,7 @@ function App() {
       <Routes>
         
     <Route exact path='/' element={< Home />}></Route>
-    <Route exact path='/about' element={< About />}></Route>
+    <Route exact path='/UseStates' element={< UseStates />}></Route>
 
 </Routes>
       

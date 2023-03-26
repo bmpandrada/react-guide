@@ -20,13 +20,13 @@ const Nabar = () => {
         <Link to="/" onClick={()=>setToggle(!toogle)}>Home</Link>
       </li>
       <li className='navbar__item'>
-        <Link to="/about" onClick={()=>setToggle(!toogle)}>About Us</Link>
+        <Link to="/UseStates" onClick={()=>setToggle(!toogle)}>UseState</Link>
       </li>
       
       
     </ul>
     <div className='navbar__burger' onClick={()=>setToggle(!toogle)}>
-    {toogle ?  <MenuIcon style={{ fontSize: "3rem" }} /> : <CloseIcon style={{ fontSize: "3rem" }}/>}
+    {toogle ?  <MenuIcon style={{ fontSize: "3rem",  transition: 'all 0.6s ease-in' }} /> : <CloseIcon style={{ fontSize: "3rem",  transition:' all 0.6s ease-in' }}/>}
       </div>
     </nav>
 
