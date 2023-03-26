@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
 import reactLogo from '../../assets/logo/react.svg'
 import {
     BrowserRouter as Router, Link
@@ -24,9 +26,7 @@ const Nabar = () => {
       
     </ul>
     <div className='navbar__burger' onClick={()=>setToggle(!toogle)}>
-      <div className='navbar__line'></div>
-      <div className='navbar__line'></div>
-      <div className='navbar__line'></div>
+    {toogle ?  <MenuIcon style={{ fontSize: "3rem" }} /> : <CloseIcon style={{ fontSize: "3rem" }}/>}
       </div>
     </nav>
 

@@ -31,6 +31,7 @@ body{
   background-color: $tertiary-color;
   align-items: center;
   position: relative;
+  
   &__header{
     padding: 1rem;
     z-index: 999;
@@ -71,15 +72,13 @@ body{
   &__burger{
     display: none;
     width: 2.5rem;
+    color: $primary-color;
     height: auto;
     margin-right: 1rem;
-   
+ 
   }
-  &__line{
-      margin-bottom: .5rem;
-      width: 100%;
-      border:1px solid $primary-color;
-    }
+
+   
 }
 
 @keyframes rotation {
@@ -115,5 +114,8 @@ body{
       position: absolute;
       right: 0;
       cursor: pointer;
+      
     }
+
+
 }
