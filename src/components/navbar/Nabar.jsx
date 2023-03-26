@@ -15,11 +15,12 @@ const Nabar = () => {
     </div>
     <ul className={`${toogle ? 'navbar__list' : 'navbar__list  show active'}`}>
       <li className='navbar__item'>
-        <Link to="/">Home</Link>
+        <Link to="/" onClick={()=>setToggle(!toogle)}>Home</Link>
       </li>
       <li className='navbar__item'>
-        <Link to="/about">About Us</Link>
+        <Link to="/about" onClick={()=>setToggle(!toogle)}>About Us</Link>
       </li>
+      
       
     </ul>
     <div className='navbar__burger' onClick={()=>setToggle(!toogle)}>
