@@ -1,0 +1,119 @@
+$color-ligth: #F6F1F1;
+$primary-color: #19A7CE;
+$secondary-color: #000000;
+$tertiary-color: #146C94;
+
+//font-color
+$font-primary: #f4f4f4;
+$font-hover:#00ffff;
+
+
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html{
+  font-size: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+  box-sizing: border-box;
+  overflow-X: hidden;
+}
+
+.navbar{
+  display: flex;
+  background-color: $tertiary-color;
+  align-items: center;
+  position: relative;
+  &__header{
+    padding: 1rem;
+    z-index: 999;
+  }
+  &__img{
+      width: 4.5rem;
+      animation: rotation infinite 5s ease-in;
+   
+    }
+    &__list{
+      display: flex;
+      gap: 1rem;
+      width: 100%;
+      justify-content: flex-end;
+      padding-right: 1rem;
+      
+    }
+    &__item{
+        list-style: none;
+        display: inline;
+        a{
+          color: $font-primary;
+          display: inline;
+          font-weight: 500;
+          font-size: 1.5rem;
+          text-decoration: none;
+          transition: all 0.45s ease-in;
+          &:hover{
+            color: $font-hover;
+          }
+        }
+      }
+      .show{
+ 
+    width: 100%;
+  }
+
+  &__burger{
+    display: none;
+    width: 2.5rem;
+    height: 5vh;
+    margin-right: 1rem;
+   
+  }
+  &__line{
+      margin-bottom: .5rem;
+      width: 100%;
+      border:1px solid $primary-color;
+    }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar__list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: $tertiary-color;
+    text-align: center;
+    top: 0;
+    left: 100%;
+    transform: translate(-50% -50%);
+    transition: all 0.6s ease-in;
+  }
+  .active{
+    left: 0;
+    transition: all 0.6s ease-in;
+  }
+  .navbar__burger{
+      display: block;
+      position: absolute;
+      right: 0;
+      cursor: pointer;
+    }
+}
