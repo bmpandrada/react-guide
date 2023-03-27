@@ -24,7 +24,7 @@ html{
 
 body{
   box-sizing: border-box;
-  overflowX: hidden;
+  overflow-x: hidden !important;
 
 }
 
@@ -164,7 +164,6 @@ h2{
 @media only screen and (max-width: 600px) {
   .navbar__list{
     display: flex;
-    visibility: hidden;
     flex-direction: column;
     justify-content: center;
     position: absolute;
