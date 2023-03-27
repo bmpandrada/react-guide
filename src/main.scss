@@ -19,11 +19,14 @@ $font-hover:#00ffff;
 html{
   font-size: 10px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
 }
 
 body{
   box-sizing: border-box;
-  overflow-x: hidden;
+  overflow: hidden;
+  overflow-y: visible;
+
 }
 
 h2{
