@@ -24,7 +24,8 @@ html{
 
 body{
   box-sizing: border-box;
-  overflow: hidden;
+
+
 }
 
 h2{
@@ -37,6 +38,7 @@ h2{
   align-items: center;
   position: relative;
   transition: all 0.6s ease-in;
+  overflow: hidden;
   &__header{
     padding: 1rem;
     z-index: 999;
