@@ -12,7 +12,7 @@ import UseStates from './components/pages/UseStates';
 function App() {
   
 
-  return (<>
+  return (
     <div className="App">
      
      <Nabar />
@@ -23,10 +23,9 @@ function App() {
 
 
 </Routes>
-</div>
 <Footer />
-    
-    </>
+</div>
+
    )
 }
 
