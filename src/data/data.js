@@ -1,9 +1,13 @@
 import img1 from '../components/imgs/useSTate.png'
 
-
+export const navLinks = [
+    {id:1, links:'/', title:'Home'},
+    {id:2, links:'/UseStates', title:'useState'}
+]
 
 export const homeData = [
-    {id:1, link:'https://react.dev/learn' }
+    {id:1, link:'https://react.dev/learn' },
+  
 ]
  
 export const lectureOne = [
