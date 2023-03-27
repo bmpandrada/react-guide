@@ -93,9 +93,11 @@ h2{
   background-image: url('./components/imgs/wallpaper.png');
   background-size: auto;
   background-repeat: no-repeat;
-  background-position: right;
-  height: 100vh;
-  padding-top: 10rem;
+  background-position:right;
+  height: 95vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
   
   &__pages{
     display: flex;
