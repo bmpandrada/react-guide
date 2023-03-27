@@ -100,7 +100,18 @@ h2{
   background-position: left;
   overflow: hidden;
 
-  
+  &__h1{
+    font-size: 5rem;
+    text-align: start;
+    font-family: sans-serif;
+    color: $font-hover;
+    text-shadow: .2rem .2rem .5rem  ;
+    a{
+      color: $color-ligth;
+      font-size: 1.5rem;
+      
+    }
+  }
   &__text{
     width: 85%;
     background-color: $color-ligth;
@@ -119,6 +130,7 @@ h2{
     width: 100%;
     height: auto;
     gap: 1rem;
+   
   
   }
   &__page1{
