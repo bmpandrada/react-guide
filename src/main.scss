@@ -137,6 +137,17 @@ h2{
   }
 }
 
+.footer{
+  text-align: center;
+  color: $color-ligth;
+  background-color: $tertiary-color;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: .3rem;
+  text-transform: capitalize;
+  padding: .5rem;
+  bottom: 0;
+}
 
 @keyframes rotation {
   from {
