@@ -3,6 +3,7 @@ import {
   Routes,
   Route,
 } from 'react-router-dom';
+import Footer from './components/footer/Footer';
 import Nabar from './components/navbar/Nabar';
 
 import Home from './components/pages/Home';
@@ -21,7 +22,7 @@ function App() {
     <Route exact path='/UseStates' element={< UseStates />}></Route>
 
 </Routes>
-      
+      <Footer />
     </div>
     
    )
