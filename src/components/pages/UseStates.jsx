@@ -5,9 +5,16 @@ import state from '../imgs/useSTate.png'
 const UseStates = () => {
   return (
     <div className='container'>
-      <h1>UseState</h1>
-      <img className='container-img' src={state} alt="" />
-
+      
+      <div className="container__pages">
+        <div className='container__page1 page--1'>
+      <img className='container__img' src={state} alt="" />
+      </div>
+      <div className='container__page2 page--2'>
+      <h2>UseState</h2>
+      <p>useState is React Hook that allows you to add state to a functional component. It returns an array with two values: the current state and a function to update it. The Hook takes an initial state value as an argument and returns an updated state value whenever the setter function is called.</p>
+      </div>
+      </div>
     </div>
   )
 }
