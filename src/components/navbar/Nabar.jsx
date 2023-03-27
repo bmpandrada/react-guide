@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
-import reactLogo from '../../assets/logo/react.svg'
+import reactLogo from '../../assets/logo/react.svg';
+import { navLinks } from '../../data/data';
 import {
     BrowserRouter as Router, Link
   } from 'react-router-dom';
@@ -16,17 +17,18 @@ const Nabar = () => {
       </Link>
     </div>
     <ul className={`${toogle ? 'navbar__list' : 'navbar__list  show active'}`}>
-      <li className='navbar__item'>
-        <Link to="/" onClick={()=>setToggle(!toogle)}>Home</Link>
+      {navLinks.map(({id, links, title})=>{
+
+     
+     return <li className='navbar__item'>
+        <Link to={links} onClick={()=>setToggle(!toogle)} key={id}>{title}</Link>
       </li>
-      <li className='navbar__item'>
-        <Link to="/UseStates" onClick={()=>setToggle(!toogle)}>UseState</Link>
-      </li>
-      
+    })}
       
     </ul>
     <div className='navbar__burger' onClick={()=>setToggle(!toogle)}>
-    {toogle ?  <MenuIcon style={{ fontSize: "3rem",  transition: 'all 0.6s ease-in' }} /> : <CloseIcon style={{ fontSize: "3rem",  transition:' all 0.6s ease-in' }}/>}
+    {toogle ?  <MenuIcon style={{ fontSize: "3rem",  transition: 'all 0.6s ease-in' }} /> : 
+    <CloseIcon style={{ fontSize: "3rem",  transition:' all 0.6s ease-in' }}/>}
       </div>
     </nav>
 
