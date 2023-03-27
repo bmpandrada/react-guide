@@ -91,13 +91,21 @@ h2{
   width: 100%;
   padding: 5rem;
   background-image: url('./components/imgs/wallpaper.png');
+  object-fit: cover;
   background-size: auto;
   background-repeat: no-repeat;
   background-position:right;
   height: 95vh;
- display: flex;
- justify-content: center;
- align-items: center;
+  &__text{
+    width: 50%;
+    background-color: $color-ligth;
+    justify-content: start;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: .5rem .5rem .5rem .1rem $primary-color;
+    border-radius: 3px;
+  }
   
   &__pages{
     display: flex;
@@ -105,7 +113,7 @@ h2{
     align-items: center;
     width: 100%;
     gap: 1rem;
-    
+    margin-top: 10rem;
   }
   &__page1{
     width: 100%;
@@ -115,13 +123,6 @@ h2{
   }
     &__page2{
     width: 100%;
-    background-color: $color-ligth;
-    justify-content: start;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    box-shadow: .5rem .5rem .5rem .1rem $primary-color;
-    border-radius: 3px;
   }
 
   &__img{
@@ -131,14 +132,20 @@ h2{
   }
 
   p{
-    width: 80%;
+    width: 100%;
     font-size: 1.5rem;
     text-align: justify;
     font-family: sans-serif;
     font-weight: 500;
   }
 }
-
+.App{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
 .footer{
   text-align: center;
   color: $color-ligth;
@@ -203,10 +210,16 @@ h2{
   }
   .container{
     width: 100%;
-    padding: 5rem;
     height: 100vh;
+    padding: 5rem;
+  
     background-size: cover;
     background-repeat: no-repeat;
+    &__text{
+      width: 100%;
   }
-
+  &__pages{
+    margin-top: 1rem;
+  }
+  }
 }
