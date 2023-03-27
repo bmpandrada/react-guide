@@ -12,7 +12,7 @@ import UseStates from './components/pages/UseStates';
 function App() {
   
 
-  return (
+  return (<>
     <div className="App">
      
      <Nabar />
@@ -21,10 +21,12 @@ function App() {
     <Route exact path='/' element={< Home />}></Route>
     <Route exact path='/UseStates' element={< UseStates />}></Route>
 
+
 </Routes>
-      <Footer />
-    </div>
+</div>
+<Footer />
     
+    </>
    )
 }
 
