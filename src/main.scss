@@ -1,4 +1,4 @@
-$color-ligth: #F6F1F1;
+$color-ligth: #ffffff;
 $primary-color: #19A7CE;
 $secondary-color: #000000;
 $tertiary-color: #146C94;
@@ -26,6 +26,10 @@ body{
   overflow-X: hidden;
 }
 
+h2{
+  font-size: 2rem;
+  font-family:monospace;
+}
 .navbar{
   display: flex;
   background-color: $tertiary-color;
@@ -38,7 +42,7 @@ body{
   }
   &__img{
       width: 4.5rem;
-      animation: rotation infinite 5s ease-in;
+      animation: rotation infinite 15s ease-in;
    
     }
     &__list{
@@ -75,11 +79,63 @@ body{
     color: $primary-color;
     height: auto;
     margin-right: 1rem;
-    transition: all 0.6s ease-in;
+    transition: all 3s ease-in;
   }
 
    
 }
+
+
+
+.container{
+  width: 100%;
+  padding: 5rem;
+  background-image: url('./components/imgs/wallpaper.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding-top: 10rem;
+  
+  &__pages{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+    
+  }
+  &__page1{
+    width: 100%;
+    justify-content: end;
+    display: flex;
+
+  }
+    &__page2{
+    width: 100%;
+    background-color: $color-ligth;
+    justify-content: start;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: .5rem .5rem .5rem .1rem $primary-color;
+    border-radius: 3px;
+  }
+
+  &__img{
+    width: 50rem;
+    border-radius: 3px;
+    right: 0;
+  }
+
+  p{
+    width: 80%;
+    font-size: 1.5rem;
+    text-align: justify;
+    font-family: sans-serif;
+    font-weight: 500;
+  }
+}
+
 
 @keyframes rotation {
   from {
@@ -116,20 +172,29 @@ body{
       cursor: pointer;
       transition: all 0.6s ease-in;
     }
-
-
-}
-
-.container{
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  h1{
-    text-align: center;
-    padding: 1rem;
-    text-transform: uppercase;
+    .container__pages{
+      flex-direction: column;
+      width: 100%;
+      p{
+        width: 100%;
+        font-size: 1.5rem;
+        text-align: justify;
+        font-family: sans-serif;
+        font-weight: 500;
+      }
+    }
+  .container__img{
+    width: 100%;
+ 
+    right: 0;
   }
-  &__img{
-    width: auto;
+  .container{
+    width: 100%;
+    padding: 5rem;
+    height: 100vh;
+    background-size: cover;
+    background-position: bottom-left;
+    background-repeat: no-repeat;
   }
+
 }
